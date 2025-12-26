@@ -1,31 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+function mostrar(tema) {
+    let texto = "";
 
-.malla {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
+    if (tema === "tema1") {
+        texto = "Contenido del Tema 1";
+    } else if (tema === "tema2") {
+        texto = "Contenido del Tema 2";
+    } else if (tema === "tema3") {
+        texto = "Contenido del Tema 3";
+    } else if (tema === "tema4") {
+        texto = "Contenido del Tema 4";
+    }
 
-.item {
-    background-color: #b30000;
-    color: white;
-    padding: 30px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-weight: bold;
+    document.getElementById("contenido").innerHTML = texto;
 }
-
-.item:hover {
-    background-color: #800000;
-}
-
-#contenido {
-    margin-top: 40px;
-    font-size: 18px;
-}
-
