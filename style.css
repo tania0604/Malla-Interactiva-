@@ -1,31 +1,45 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background: #f7f4fb;
+    color: #3d0f66;
 }
 
 .malla {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.nivel {
+    grid-column: 1 / -1;
+    background: #7c3aed; /* morado fuerte */
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 .item {
-    background-color: #b30000;
-    color: white;
-    padding: 30px;
+    background-color: #c4b5fd; /* morado claro */
+    color: #2d004b;
+    padding: 25px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .item:hover {
-    background-color: #800000;
+    background-color: #a78bfa;
 }
 
 #contenido {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 18px;
+    color: #2a0d57;
 }
+
 
