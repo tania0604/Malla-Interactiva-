@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Malla Interactiva</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Malla Interactiva – Relaciones Internacionales PUCP</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-<h1>Malla Interactiva</h1>
+<h1>Malla Interactiva – Relaciones Internacionales (PUCP)</h1>
+<p class="subtitulo">Haz clic en un curso para ver requisitos</p>
 
 <div class="malla">
-    <div class="item" onclick="mostrar('tema1')">Tema 1</div>
-    <div class="item" onclick="mostrar('tema2')">Tema 2</div>
-    <div class="item" onclick="mostrar('tema3')">Tema 3</div>
-    <div class="item" onclick="mostrar('tema4')">Tema 4</div>
-</div>
 
-<div id="contenido"></div>
+  <!-- NIVEL 1 -->
+  <div class="nivel">
+    <h2>Nivel 1</h2>
+    <div class="curso" onclick="mostrar('tei1')">Teoría de las RI I</div>
+  </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+  <!-- NIVEL 2 -->
+  <div class="nivel">
+    <h2>Nivel 2</h2>
+    <div class="curso" onclick="mostrar('dip')">Derecho Internacional Público</div>
+    <div class="curso" onclick="mostrar('hist1')">Historia de las RI I</div>
+  </div>
 
+  <!-- NIVEL 3 -->
+  <div class="nivel">
+    <h2>Nivel 3</h2>
+    <div class="curso" onclick="mostrar('tei2')">Teoría de las RI II</div>
+    <div class="curso" onclick="mostrar('eco')">Economía Peruana y Global</div>
+  </div>
+
+  <!-- NIVEL 4 -->
+  <div class="nivel">
+    <h2>Nivel 4</h2>
+    <div class="curso" onclick="mostrar('metodos')">Fundamentos de Investigación</div>
+    <div class="curso" onclick="mostrar('hist2')">Historia de las RI II</div>
+  </div>
+
+  <!-- NIVEL 5 -->
+  <div class="nivel">
+    <h2>Nivel 5</h2>
+    <div cla
